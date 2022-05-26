@@ -11,3 +11,8 @@ html{
     background-color: #fff;
     text-rendering: optimizeLegibility;
 }
+
+.row {
+    width: 114rem;
+    margin: 0 auto;
+}
