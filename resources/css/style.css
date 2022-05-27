@@ -1,3 +1,5 @@
+/*-------------------DEFAULT SETUP--------------------------------------*/
+/*----------------------------------------------------------------------*/
 *{
     padding: 0;
     margin: 0;
@@ -12,7 +14,49 @@ html{
     text-rendering: optimizeLegibility;
 }
 
-.header-main {
+/*-------------REUSABLE COMPONENT------------------------*/
+/*--------------------------------------------------------*/
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+    position: relative;    
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+    font-weight: 400;
+    line-height: 135%;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: coral;
+    color: white;
+    padding: 1.5rem 3rem;
+    border-radius: 2rem;
+    margin: 0 0.5rem;
+    display: inline-block;
+    width: 19rem;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: darkorange;
+}
+
+
+/*---------------------HEADER-------------------------------*/
+/*---------------------------------------------------------*/
+
+.heading-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,16 +68,16 @@ header {
     height: 100vh;
     padding: 1rem 5rem;
 }
-.header-main-nav {
+.heading-main-nav {
     list-style: none;
 }
 
-.header-main-nav li {
+.heading-main-nav li {
     display: inline-block;
     margin-right: 3rem;
 }
 
-.header-main-nav li a {
+.heading-main-nav li a {
     text-decoration: none;
     color: white;
     font-size: 2.2rem;
@@ -41,12 +85,17 @@ header {
     transition: border-bottom 0.2s;
 }
 
-.header-main-nav li a:hover,
-.header-main-nav li a:active {
+.heading-main-nav li a:hover,
+.heading-main-nav li a:active {
    border-bottom:  2px solid #ccc;
 }
 
-.row {
+.heading-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-45%, 10%);
     width: 114rem;
-    margin: 0 auto;
 }
+
+
+
