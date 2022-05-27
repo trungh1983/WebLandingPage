@@ -12,19 +12,18 @@ html{
     text-rendering: optimizeLegibility;
 }
 
-header {
-    background-image: linear-gradient(45deg, rgba(2,33,64, 0.8) 55%, rgb(45,95, 93, 0.85));
-    background-attachment: fixed;
-    height: 100vh;
-}
-
 .header-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5rem;
 }
 
+header {
+    background-image: linear-gradient(45deg, rgba(2,33,64, 0.8) 55%,  rgba(45,95, 93, 0.85));
+    background-attachment: fixed; 
+    height: 100vh;
+    padding: 1rem 5rem;
+}
 .header-main-nav {
     list-style: none;
 }
@@ -37,13 +36,14 @@ header {
 .header-main-nav li a {
     text-decoration: none;
     color: white;
-    font-weight: 700;
     font-size: 2.2rem;
     padding-bottom: 0.3rem;
+    transition: border-bottom 0.2s;
 }
+
 .header-main-nav li a:hover,
-.header-main-nav li a:active{
-    border-bottom: 2px solid #cccccc;
+.header-main-nav li a:active {
+   border-bottom:  2px solid #ccc;
 }
 
 .row {
